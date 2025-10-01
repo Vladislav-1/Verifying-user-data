@@ -83,3 +83,30 @@ html {
   }
 }
 
+@media (max-width: 375px) {
+  html {
+    font-size: 16px;
+  }
+
+  .main__containerBoxIndicator {
+    width: calc(100vw - 28px);
+    height: 20px;
+  }
+
+  .main__boxIndicator {
+    width: calc(100vw - 28px);
+  }
+
+  @keyframes showIndicator {
+    from {
+      width: 0px;
+    }
+    to {
+      width: calc(100vw - 34px);
+    }
+  }
+
+  .main__result {
+    width: calc(100vw - 28px);
+  }
+}
